@@ -1,0 +1,23 @@
+.fl-navbar  {
+    background-color: $fl-color-secondary !important;
+    &__logo {
+        height: 55px ;
+        width: 45px ;
+        padding-right: 5px;
+    }
+    &__link{
+        color: $fl-color-primary !important;
+    }
+}
+
+.line {
+    height: 6px;
+    width: 40px;
+    background: #fff;
+    margin: 7px auto;
+    border-radius: 1px;
+  }
+
+  .navbar-dark .navbar-toggler {
+    border-color: transparent;
+  }
