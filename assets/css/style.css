@@ -9929,6 +9929,10 @@ h3 {
   }
 }
 /* Reset*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9941,6 +9945,12 @@ img {
 
 a {
   text-decoration-style: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 .fl-navbar {
@@ -9967,13 +9977,37 @@ a {
   border-color: transparent;
 }
 
+.card-two {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card-two__img {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.footer {
+  background-color: #000000;
+  color: #FFF;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 400px;
+}
+
 .fl-btn {
-  text-decoration: none !important;
-  padding: 5px 20px;
+  padding: 5px 0;
   font-size: 18px;
   color: #0C0910;
-  background-color: #fff;
+  background-color: #FFAF6D;
   border: 3px solid #A6A5A8;
+  border-radius: 5px;
 }
 
 .fl-btn:hover {
@@ -9981,9 +10015,11 @@ a {
 }
 
 .fl-mail [type=email] {
-  width: 80%;
+  padding-left: auto;
+  width: 200px;
   padding: 3px 10px;
   border: 1px solid #f6f6f6;
+  border-radius: 3px;
   background-color: #fff;
   margin: 8px 0;
   display: inline-block;

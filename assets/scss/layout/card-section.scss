@@ -1,0 +1,15 @@
+.card-two   {
+    display: flex;
+    padding: 20px;
+    justify-content: center; 
+    align-items: center; 
+
+        &__img  {
+            width: 180px;
+            height: 180px;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 50%;
+            
+        }
+}

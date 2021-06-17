@@ -1,10 +1,11 @@
 .fl-btn{
-    text-decoration: none !important;
-    padding: 5px 20px ;
+    padding: 5px 0;
     font-size: 18px;
     color: #0C0910;
-    background-color: #fff;
+    background-color: $fl-tangerine;
     border: 3px solid #A6A5A8;
+    border-radius:5px;
+
   }
   .fl-btn:hover{
     color: #A6A5A8;
