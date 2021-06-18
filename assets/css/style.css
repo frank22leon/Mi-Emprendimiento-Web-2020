@@ -10084,7 +10084,8 @@ body {
 }
 
 .gear {
-  animation: rotate 2s infinite linear;
+  animation: rotate 3s linear infinite;
+  transform-origin: 80% 80%;
 }
 
 @keyframes move {
@@ -10100,16 +10101,12 @@ body {
 }
 @keyframes rotate {
   0% {
-    transform: rotate(0dg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360dg);
+    transform: rotate(360deg);
   }
 }
-.gear {
-  animation: circle 2s ease-in-out infinite;
-}
-
 .footer {
   grid-area: footer;
   background-color: #000000;
