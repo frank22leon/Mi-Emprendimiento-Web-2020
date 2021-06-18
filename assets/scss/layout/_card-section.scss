@@ -1,0 +1,100 @@
+.card-two   {
+    grid-area: cardSectionTwo;
+    display: flex;
+    padding: 20px;
+    justify-content: center; 
+    align-items: center; 
+
+        &__img  {
+            width: 180px;
+            height: 180px;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 50%;      
+        }
+        &__title{
+            font-family: $ubuntu ;
+            font-size: $fl-large;
+            font-weight: $bold; 
+        }
+        &__text{
+            font-family: $ubuntu ;
+            font-size: $fl-medium;
+            font-weight: $regular;
+        }
+        &__subtitle{
+            background-color: gray;
+            color: $fl-color-primary;
+            font-family: $ubuntu ;
+            font-size: $fl-large;
+            font-weight: $bold;
+        }
+    }
+
+
+.card-one {
+grid-area:cardSectionOne;
+    &__title{
+        font-family: $ubuntu ;
+        font-size: $fl-x-large;
+        font-weight: $bold;
+        
+    }
+    &__text{
+        font-family: $ubuntu ;
+        font-size: $fl-large;
+        font-weight: $regular;
+    }
+    &__subtitle{
+        font-family: $ubuntu ;
+        font-size: $fl-large;
+        font-weight: $bold;
+    }
+}
+
+.svganimation   {
+    width: 300px;
+    height: 300px;
+}
+
+.simbol {
+    animation: move 3s ease-in-out infinite;
+}
+
+.gear {
+
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes move {
+
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translateX(100px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rotate {
+
+    0%{
+        transform: rotate(0dg);
+    }
+
+    100% {
+        transform: rotate(360dg);
+    }
+
+}
+
+.gear {
+
+    animation: circle 2s ease-in-out infinite;
+}
+

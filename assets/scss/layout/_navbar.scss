@@ -1,5 +1,6 @@
 .fl-navbar  {
     background-color: $fl-color-secondary !important;
+    grid-area: navbar;
     &__logo {
         height: 55px ;
         width: 45px ;

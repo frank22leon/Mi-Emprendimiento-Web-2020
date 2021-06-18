@@ -1,9 +1,5 @@
 .footer {
+    grid-area: footer;
     background-color: $fl-color-secondary;
     color: $fl-color-primary;
-}
-
-.hero-section img {
-    width: 100%;
-    height: 400px;
 }

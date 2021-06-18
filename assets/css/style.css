@@ -9951,10 +9951,48 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template: 80px 310px 1fr 1fr 300px/100%;
+  grid-template-areas: "navbar" "herosection" "cardSectionOne" "cardSectionTwo" "footer";
+}
+@media (min-width: 576px) {
+  body {
+    grid-template: 80px 420px 1fr 1fr 300px/100%;
+    grid-template-areas: "navbar" "herosection" "cardSectionOne" "cardSectionTwo" "footer";
+  }
+}
+@media (min-width: 768px) {
+  body {
+    grid-template: 80px 540px 1fr 1fr 300px/100%;
+    grid-template-areas: "navbar" "herosection" "cardSectionOne" "cardSectionTwo" "footer";
+  }
+}
+@media (min-width: 992px) {
+  body {
+    grid-template: 80px 540px 1fr 1fr 100px/100%;
+    grid-template-areas: "navbar" "herosection" "cardSectionOne" "cardSectionTwo" "footer";
+  }
+}
+
+@media (min: width 992px) {
+  .subcardSection {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template: 1fr 1fr/100%;
+    grid-template-areas: "subCardOne" "SubCardTwo";
+  }
 }
 
 .fl-navbar {
   background-color: #000000 !important;
+  grid-area: navbar;
 }
 .fl-navbar__logo {
   height: 55px;
@@ -9977,7 +10015,16 @@ html, body {
   border-color: transparent;
 }
 
+.hero-section {
+  grid-area: herosection;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .card-two {
+  grid-area: cardSectionTwo;
   display: flex;
   padding: 20px;
   justify-content: center;
@@ -9990,15 +10037,83 @@ html, body {
   border: 1px solid black;
   border-radius: 50%;
 }
-
-.footer {
-  background-color: #000000;
+.card-two__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-two__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.card-two__subtitle {
+  background-color: gray;
   color: #FFF;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.hero-section img {
-  width: 100%;
-  height: 400px;
+.card-one {
+  grid-area: cardSectionOne;
+}
+.card-one__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.card-one__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.card-one__subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.svganimation {
+  width: 300px;
+  height: 300px;
+}
+
+.simbol {
+  animation: move 3s ease-in-out infinite;
+}
+
+.gear {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0dg);
+  }
+  100% {
+    transform: rotate(360dg);
+  }
+}
+.gear {
+  animation: circle 2s ease-in-out infinite;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #000000;
+  color: #FFF;
 }
 
 .fl-btn {
